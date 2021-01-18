@@ -1,1 +1,0 @@
-Please use Microsoft Edge to open konoha.html because I have used background sound in some pages(& subpages) and google chrome has changed it's policies regarding the audio tag (autoplay function).

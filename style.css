@@ -1,0 +1,86 @@
+.bg:hover {
+  background-color: rgb(74, 170, 50);
+}
+.bg {
+  width: 9px;
+  height: 500px;
+  border: solid 1px black;
+  border-radius: 30px;
+  background-color: rgba(75, 51, 51, 0.192);
+  opacity: 0;
+  left: 290px;
+  position: relative;
+  animation: spawn-right 3s forwards;
+}
+p#hey {
+  font-size: 50px;
+  color: rgb(56, 81, 190);
+  text-align: center;
+  top: 0px;
+  opacity: 0;
+  position: relative;
+  animation-name: top-spawn;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+p#name {
+  font-size: 50px;
+  padding-top: 20px;
+  color: rgb(56, 81, 190);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  top: 0px;
+  opacity: 0;
+  position: relative;
+  animation-name: top-spawn-name;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+p#welcome {
+  font-size: 50px;
+  padding-top: 30px;
+  color: rgb(56, 81, 190);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  top: 0px;
+  opacity: 0;
+  position: relative;
+  animation-name: top-spawn-name;
+  animation-delay: 6s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes spawn-right {
+  from {
+    opacity: 0;
+    width: 0px;
+  }
+  to {
+    opacity: 1;
+    width: 900px;
+  }
+}
+@keyframes top-spawn {
+  0% {
+    opacity: 0;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+    top: 10px;
+  }
+}
+@keyframes top-spawn-name {
+  0% {
+    opacity: 0;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+    top: 10px;
+  }
+}

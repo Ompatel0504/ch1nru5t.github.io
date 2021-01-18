@@ -1,0 +1,18 @@
+body {
+  background-color: rgba(114, 114, 113, 0.164);
+}
+.nav {
+  height: 50px;
+  background-color: black;
+  border: solid 2px white;
+  border-radius: 10px;
+}
+.nav a {
+  font-size: 40px;
+  padding: 10px;
+  text-decoration: none;
+  color: aliceblue;
+}
+.nav a:hover {
+  color: aquamarine;
+}
