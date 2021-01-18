@@ -1,0 +1,28 @@
+#skills {
+  margin-top: 200px;
+}
+#programming {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(177, 51, 51);
+  border-radius: 20px;
+  margin: 20px 30px;
+  display: inline-block;
+}
+#videoediting {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(177, 51, 51);
+  border-radius: 20px;
+  margin: 20px 80px;
+}
+#webdevelopment {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(177, 51, 51);
+  border-radius: 20px;
+  margin: 20px 30px;
+}

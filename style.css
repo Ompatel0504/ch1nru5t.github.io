@@ -1,28 +1,40 @@
-.bg:hover {
-  background-color: rgb(74, 170, 50);
-}
 .bg {
-  width: 9px;
+  padding-top: 40px;
+  margin-left: 350px;
+  width: 50px;
   height: 500px;
-  border: solid 1px black;
-  border-radius: 30px;
-  background-color: rgba(75, 51, 51, 0.192);
+  background-color: rgba(114, 114, 113, 0.164);
   opacity: 0;
-  left: 290px;
-  position: relative;
-  animation: spawn-right 3s forwards;
+  border-radius: 5px;
+  /* left: 290px; */
+  /* position: relative; */
+  animation-name: spawn-right;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin-bottom: 300px;
+}
+.intro:hover {
+  animation-name: color-change-rainbow-bg;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }
 p#hey {
   font-size: 50px;
-  color: rgb(56, 81, 190);
+  color: violet;
   text-align: center;
   top: 0px;
   opacity: 0;
   position: relative;
-  animation-name: top-spawn;
+  /* animation-name: top-spawn;
   animation-delay: 2s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  animation-name: color-change-rainbow;
+  animation-direction: 5s;
+  animation-iteration-count: infinite; */
+  animation: top-spawn 2s 2s forwards, color-change-rainbow 2s infinite forwards;
 }
 p#name {
   font-size: 50px;
@@ -53,34 +65,4 @@ p#welcome {
   animation-delay: 6s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-}
-@keyframes spawn-right {
-  from {
-    opacity: 0;
-    width: 0px;
-  }
-  to {
-    opacity: 1;
-    width: 900px;
-  }
-}
-@keyframes top-spawn {
-  0% {
-    opacity: 0;
-    top: 0px;
-  }
-  100% {
-    opacity: 1;
-    top: 10px;
-  }
-}
-@keyframes top-spawn-name {
-  0% {
-    opacity: 0;
-    top: 0px;
-  }
-  100% {
-    opacity: 1;
-    top: 10px;
-  }
 }
