@@ -1,13 +1,14 @@
 #skills {
-  margin-top: 200px;
+  margin-top: 800px;
 }
 #programming {
   width: 400px;
   height: 400px;
   background-color: rgb(177, 51, 51);
   border-radius: 20px;
-  margin: 20px 30px;
+  margin: 10px 20px;
   display: inline-block;
+  font-family: "Bangers", cursive;
 }
 #videoediting {
   display: inline-block;
@@ -16,7 +17,8 @@
   height: 400px;
   background-color: rgb(177, 51, 51);
   border-radius: 20px;
-  margin: 20px 80px;
+  margin: 10px 100px;
+  font-family: "Bangers", cursive;
 }
 #webdevelopment {
   display: inline-block;
@@ -24,5 +26,9 @@
   height: 400px;
   background-color: rgb(177, 51, 51);
   border-radius: 20px;
-  margin: 20px 30px;
+  margin: 10px 20px;
+  font-family: "Bangers", cursive;
+}
+#tags {
+  margin-top: -500px;
 }

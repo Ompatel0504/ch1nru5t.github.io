@@ -1,47 +1,42 @@
 .bg {
-  padding-top: 40px;
-  margin-left: 350px;
-  width: 50px;
+  padding-top: 10px;
+  margin-top: 100px;
+  margin-left: 250px;
+  width: 1000px;
   height: 500px;
   background-color: rgba(114, 114, 113, 0.164);
-  opacity: 0;
-  border-radius: 5px;
+  opacity: 1;
+  border-radius: 30px;
   /* left: 290px; */
   /* position: relative; */
-  animation-name: spawn-right;
-  animation-duration: 2s;
+  animation-name: opac;
+  animation-duration: 0.1s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  margin-bottom: 300px;
-}
-.intro:hover {
-  animation-name: color-change-rainbow-bg;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  animation-fill-mode: initial;
+  margin-bottom: 200px;
+  border: solid 3px white;
+  animation: opac 1s 1 forwards, color-change-rainbow-bg 9s infinite forwards,
+    border-on-off 2s infinite;
 }
 p#hey {
-  font-size: 50px;
+  user-select: none;
+  margin-top: 30px;
+  font-size: 70px;
   color: violet;
   text-align: center;
   top: 0px;
   opacity: 0;
   position: relative;
-  /* animation-name: top-spawn;
-  animation-delay: 2s;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-name: color-change-rainbow;
-  animation-direction: 5s;
-  animation-iteration-count: infinite; */
-  animation: top-spawn 2s 2s forwards, color-change-rainbow 2s infinite forwards;
+  font-family: "Bangers", cursive;
+  animation: top-spawn 1s 1s forwards, color-change-rainbow 2s infinite forwards,
+    size-up-down 2s forwards 3;
 }
 p#name {
-  font-size: 50px;
+  user-select: none;
+  font-size: 70px;
   padding-top: 20px;
-  color: rgb(56, 81, 190);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  color: rgb(15, 151, 144);
+  font-family: "Bangers", cursive;
   text-align: center;
   top: 0px;
   opacity: 0;
@@ -52,11 +47,11 @@ p#name {
   animation-fill-mode: forwards;
 }
 p#welcome {
-  font-size: 50px;
+  user-select: none;
+  font-size: 70px;
   padding-top: 30px;
-  color: rgb(56, 81, 190);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  color: rgb(15, 151, 144);
+  font-family: "Bangers", cursive;
   text-align: center;
   top: 0px;
   opacity: 0;
@@ -65,4 +60,101 @@ p#welcome {
   animation-delay: 6s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+}
+#about {
+  /* position: relative; */
+  margin-top: 700px;
+  width: 790px;
+  height: 350px;
+  background-color: rgb(194, 173, 173);
+  border-left: solid 20px rgba(255, 0, 0, 0.425);
+  /* animation: right-to-left-opa 2s forwards; */
+  border-radius: 10px;
+  user-select: none;
+}
+#grass {
+  position: relative;
+  bottom: 470px;
+  margin-top: 120px;
+  margin-bottom: 100px;
+  right: 10px;
+}
+#goku {
+  left: -240px;
+  position: relative;
+  bottom: 900px;
+  animation-name: zoom-in-out-goku;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#heythere {
+  font-size: 80px;
+  position: relative;
+  left: 200px;
+  bottom: 280px;
+  color: brown;
+  z-index: 99999;
+  /* animation-name: zoom-in-out;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; */
+  font-family: "Bangers", cursive;
+}
+#sidenav {
+  position: fixed;
+  top: 200px;
+  z-index: 99999;
+}
+#sn1 {
+  position: fixed;
+  float: left;
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  left: -100px;
+  height: 40px;
+  border-radius: 5px;
+}
+#sn2 {
+  position: fixed;
+  float: left;
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  left: -100px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 45px;
+}
+#sn3 {
+  position: fixed;
+  float: left;
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  left: -100px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 89px;
+}
+#sn4 {
+  position: fixed;
+  float: left;
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  left: -100px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 133px;
+}
+#sidenav a:hover {
+  left: -10px;
+  transition: 0.3s;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: "Bangers", cursive;
+}
+#para p {
+  bottom: 800px;
+  position: relative;
+  font-size: 30px;
+  color: red;
 }
