@@ -7,11 +7,11 @@
   background-color: rgb(177, 51, 51);
   border-radius: 20px;
   margin: 10px 20px;
-  display: inline-block;
+  display: inline-flex;
   font-family: "Bangers", cursive;
 }
 #videoediting {
-  display: inline-block;
+  display: inline-flex;
   position: relative;
   width: 400px;
   height: 400px;
@@ -21,7 +21,7 @@
   font-family: "Bangers", cursive;
 }
 #webdevelopment {
-  display: inline-block;
+  display: inline-flex;
   width: 400px;
   height: 400px;
   background-color: rgb(177, 51, 51);
